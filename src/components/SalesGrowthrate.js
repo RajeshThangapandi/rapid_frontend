@@ -8,7 +8,7 @@ const SalesGrowthRateOverTime = () => {
   const [chartOptions, setChartOptions] = useState({});
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/sales-growth-rate/')
+    axios.get('https://rapid-backend-bxtu.onrender.com/api/sales-growth-rate/')
       .then(response => {
         const data = response.data;
 

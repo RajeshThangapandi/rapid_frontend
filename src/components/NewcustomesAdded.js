@@ -8,7 +8,7 @@ const NewCustomersAddedOverTime = () => {
   const [chartOptions, setChartOptions] = useState({});
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/new-customers-over-time/')
+    axios.get('https://rapid-backend-bxtu.onrender.com/api/new-customers-over-time/')
       .then(response => {
         const data = response.data;
 

@@ -9,7 +9,7 @@ const RepeatCustomers = () => {
   const [timeframe, setTimeframe] = useState('monthly'); // Default timeframe
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/repeat-customers/')
+    axios.get('https://rapid-backend-bxtu.onrender.com/api/repeat-customers/')
       .then(response => {
         const data = response.data;
 
